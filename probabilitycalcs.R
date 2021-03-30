@@ -9,7 +9,7 @@ prob_death50_F<-death_prob%>%filter(age==50 & sex == "Female")%>%pull(prob)
 a<-(-150000)
 b<-1150
 
-n<-10#deleted a zero, dont forget to add comments, is this better?
+n<-10#deleted a zero, dont forget to add comments, is this better??
 
 
 ev<-a*prob_death50_F+b*(1-prob_death50_F)#added a comment
