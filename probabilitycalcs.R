@@ -8,7 +8,7 @@ prob_death50_F<-death_prob%>%filter(age==50 & sex == "Female")%>%pull(prob)
 
 a<-(-150000)
 b<-1150
-n<-100
+n<-10
 
 ev<-a*prob_death50_F+b*(1-prob_death50_F)
 se<-abs(b-a)*sqrt(prob_death50_F*(1-prob_death50_F))
